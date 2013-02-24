@@ -1,0 +1,185 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@mixin rounded($radius: 10px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+$lightGrey: #808285;
+$headerWeight: 900;
+$clear: both;
+
+#top, #navigation, #main-content, #footer  {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#top  {
+  margin-top: 50px;
+  height: 30px;
+}
+#logo h1  {
+  font-size: 2.0em;
+  float: left;
+}
+#social-UL  {
+  float: right;
+  margin-top: 15px;
+  li  {
+    float: left;
+    margin-left: 10px;
+  }
+  li:first-child  {
+    margin-left: 0px;
+  }
+}
+#navigation  {
+  clear: $clear;
+  margin-top: 10px;
+  padding-top: 5px;
+  height: 75px;
+  border:  {
+    style: solid;
+    top:  {
+      width: 1px;
+      color: #d1d1d1;
+    }
+  }
+  li  {
+    float: left;
+    margin-left: 50px;
+  }
+  li:first-child  {
+    margin-left: 0px;
+  }
+  a  {
+  text-decoration: none;
+  color: #bebebe;
+  }
+  a:hover  {
+    color: #6f6f6f;
+  }
+}
+#main-content{
+  border:  {
+    style: solid;
+    top:  {
+      width: 1px;
+      color: #d1d1d1;
+    }
+  }
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+#heroImage{
+  height: 500px;
+  width: 100%;
+  background-color: #bebebe;
+  margin-bottom: 40px;
+  border:  {
+    style: solid;
+    color: #797777;
+    width: 2px;
+  }
+}
+#left{
+  float: left;
+  width: 49.5%;
+  h2{
+    font-size: 2.0em;
+    font-weight: $headerWeight;
+  }
+  h4{
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: $headerWeight;
+  }
+  ul{
+    color: $lightGrey;
+    margin-top: 10px;
+  }
+  li{
+    margin-top: 15px;
+  }
+  p{
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+}
+#right{
+  float: right;
+  width: 35%;
+  h2{
+    font-size: 1.25em;
+    font-weight: $headerWeight;
+  }
+  p{
+    margin-top: 10px;
+    color: $lightGrey;
+  }
+  a{
+    float: right;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #2a99d8;
+  }
+  .input{
+    width: 60%;
+    padding: 5px;
+    margin-left: 20%;
+  }
+  #submitSignUp{
+    float: right;
+    background-color: #fcfcfc;
+  }
+  #submitSignUp { @include rounded(); }
+}
+.side-content{
+  clear: $clear;
+}
+#footer{
+  margin-top: 530px;
+  height: 50px;
+  padding-top: 20px;
+  clear: both;
+  border:  {
+    style: solid;
+    top:  {
+      width: 1px;
+      color: #d1d1d1;
+    }
+  }
+  p{
+    float: right;
+    color: $lightGrey;
+  }
+}
+.formQuarter{
+  width: 25%;
+  display: block;
+}
+.formHalf{
+  width: 48%;
+  font-size: 1.1em;
+  display: inline;
+}
+.formWhole{
+  width: 99%;
+  font-size: 1.1em;
+  display: inline;
+}
+textarea{
+  resize: none;
+  height: 200px;
+}
+#contactSubmit{
+  float: right;
+}
+#left form{
+  margin-top: 20px;
+}
