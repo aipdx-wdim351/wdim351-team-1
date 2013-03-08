@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('fonts/League-Gothic-fontfacekit//League_Gothic-webfont.eot');
+    src: url('fonts/League-Gothic-fontfacekit//League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/League-Gothic-fontfacekit//League_Gothic-webfont.woff') format('woff'),
+         url('fonts/League-Gothic-fontfacekit//League_Gothic-webfont.ttf') format('truetype'),
+         url('fonts/League-Gothic-fontfacekit//League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+img{ /*Testing Don't forget to delete*/
+	width:100%;
+}
+
+/*------------------------------------------------------*/
+  /*Variables
+/*------------------------------------------------------*/
+
+$header-font:'LeagueGothicRegular';
+$panel:#26545c;
+$subheader:#1b7e5a;
+$promobox:#232323;
+$button:#e76e66;
+
+/*------------------------------------------------------*/
+  /*Paragraphs
+/*------------------------------------------------------*/
+p{
+	color:#fff;
+}
+.promos p{
+	font-size:0.938em;
+	padding-top:.470em;
+}
+
+.pages p{
+	color:#292929;
+}
+
+
+/*------------------------------------------------------*/
+  /* Buttons 
+/*------------------------------------------------------*/
+
+.button.small{
+	background:$button;
+	border-color:#000;
+	float:right; 
+}
+
+/*------------------------------------------------------*/
+  /*Body
+/*------------------------------------------------------*/
+
+body{
+background:url('images/bg.png');
+}
+
+/*------------------------------------------------------*/
+  /* Main Navagation
+/*------------------------------------------------------*/
+
+nav{margin-top:5%;
+	
+	ul{
+		display:inline;
+	}
+	li{
+		display:inline;
+		margin-right:3%;
+	}
+	a{
+		color:$button;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		&:hover{color:#292929;}
+	}
+
+   }
+
+/*------------------------------------------------------*/
+  /* Panels
+/*------------------------------------------------------*/
+
+.panel{
+	background:$panel;
+	color:#fff;
+	font-family:$header-font;
+}
+
+/*------------------------------------------------------*/
+  /* Sub Headers
+/*------------------------------------------------------*/
+
+.subheader{
+	font-family:$header-font;
+	background:$subheader;
+	color:#fff;
+	padding:10px;
+	letter-spacing:1px;
+	font-weight:300;
+
+}
+
+.subheader-pages{
+	font-family:$header-font;
+	font-weight:300;
+	font-size:1.925em;
+	text-transform:uppercase;
+	background:#26545c;
+	color:#fff;
+	padding:10px;
+	letter-spacing:1px;
+	
+}
+
+.subheader-footer{
+	font-family:$header-font;
+	font-weight:300;
+	text-transform:uppercase;
+	background:#26545c;
+	color:#fff;
+	padding:10px;
+	letter-spacing:1px;
+
+}
+
+
+/*------------------------------------------------------*/
+  /* Front Page Promos
+/*------------------------------------------------------*/
+.promos{
+	background:$promobox;
+	padding-top:5px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:-14px;
+}
+
+/*------------------------------------------------------*/
+  /* Footer
+/*------------------------------------------------------*/
+footer{
+	background:#000;
+	padding-top:10px;
+}
+
+/*------------------------------------------------------*/
+  /* Meadia Queries 
+/*------------------------------------------------------*/
+@media screen and (max-width: 951px) {
+  nav ul li a {
+    font-size: 0.890em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav{
+    margin-top:0;
+    display:none;
+  }
+}
+
+@media screen and (max-width: 551px) {
+  .orbit-container{
+    display:none;
+  }
+}
+
+@media screen and (min-width: 551px) {
+  .hidden{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hidden{
+    margin-top:1em;
+  }
+
+  nav{
+  	margin-top:0;
+  	display:none;
+  }
+}
