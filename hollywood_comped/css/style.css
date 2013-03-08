@@ -5,12 +5,43 @@
   font-weight: normal;
   font-style: normal; }
 
-body {
-  background: url("images/bg.png"); }
+img {
+  /*Testing Don't forget to delete*/
+  width: 100%; }
 
+/*------------------------------------------------------*/
+/*Variables
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*Paragraphs
+/*------------------------------------------------------*/
 p {
   color: #fff; }
 
+.promos p {
+  font-size: 0.938em;
+  padding-top: .470em; }
+
+.pages p {
+  color: #292929; }
+
+/*------------------------------------------------------*/
+/* Buttons 
+/*------------------------------------------------------*/
+.button.small {
+  background: #e76e66;
+  border-color: #000;
+  float: right; }
+
+/*------------------------------------------------------*/
+/*Body
+/*------------------------------------------------------*/
+body {
+  background: url("images/bg.png"); }
+
+/*------------------------------------------------------*/
+/* Main Navagation
+/*------------------------------------------------------*/
 nav {
   margin-top: 5%; }
   nav ul {
@@ -25,18 +56,31 @@ nav {
     nav a:hover {
       color: #292929; }
 
+/*------------------------------------------------------*/
+/* Panels
+/*------------------------------------------------------*/
 .panel {
   background: #26545c;
   color: #fff;
   font-family: "LeagueGothicRegular"; }
 
-img {
-  /*Testing Don't forget to delete*/
-  width: 100%; }
-
+/*------------------------------------------------------*/
+/* Sub Headers
+/*------------------------------------------------------*/
 .subheader {
   font-family: "LeagueGothicRegular";
   background: #1b7e5a;
+  color: #fff;
+  padding: 10px;
+  letter-spacing: 1px;
+  font-weight: 300; }
+
+.subheader-pages {
+  font-family: "LeagueGothicRegular";
+  font-weight: 300;
+  font-size: 1.925em;
+  text-transform: uppercase;
+  background: #26545c;
   color: #fff;
   padding: 10px;
   letter-spacing: 1px; }
@@ -44,11 +88,15 @@ img {
 .subheader-footer {
   font-family: "LeagueGothicRegular";
   font-weight: 300;
+  text-transform: uppercase;
   background: #26545c;
   color: #fff;
   padding: 10px;
   letter-spacing: 1px; }
 
+/*------------------------------------------------------*/
+/* Front Page Promos
+/*------------------------------------------------------*/
 .promos {
   background: #232323;
   padding-top: 5px;
@@ -56,13 +104,16 @@ img {
   padding-right: 10px;
   margin-top: -14px; }
 
-.button.small {
-  background: #e76e66;
-  border-color: #000;
-  float: right; }
-  .button.small a:hover {
-    background: red; }
+/*------------------------------------------------------*/
+/* Footer
+/*------------------------------------------------------*/
+footer {
+  background: #000;
+  padding-top: 10px; }
 
+/*------------------------------------------------------*/
+/* Meadia Queries 
+/*------------------------------------------------------*/
 @media screen and (max-width: 951px) {
   nav ul li a {
     font-size: 0.890em; } }

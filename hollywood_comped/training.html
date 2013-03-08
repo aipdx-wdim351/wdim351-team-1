@@ -5,11 +5,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Training</title>
+  <title>Hollywood Fitness</title>
 
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
   <script src="js/vendor/custom.modernizr.js"></script>
 
@@ -18,30 +19,19 @@
  <!-- Header and Nav -->
 
   <div class="row">
-    <div class="large-3 columns">
-      <h1><img src="http://placehold.it/400x100&text=Logo"></h1>
+    <div class="large-5 columns">
+      <h1><img src="css/images/hollywoodlogo.png"></h1>
     </div>
-    <div class="large-9 columns">
-        <nav class="top-bar">
-  <ul class="title-area">
-    <!-- Title Area -->
-    <li class="name">
-      <h1><a href="#">Navagation</a></h1>
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-    <!-- Left Nav Section -->
-    <ul class="left">
-      <li class="divider"></li>
-      <li class="active"><a href="index.html">Home</a></li>
-      <li class="divider"></li>
-      <li><a href="stuff.html">Membership</a></li>
-      <li class="divider"></li>
-      <li><a href="training.html">Training</a>
-
+    <div class="small-10 large-7 columns">
+        <nav>
+          <ul>
+            <li class='has-single-shadow'><a href="#">Memberships</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">News</a></li>
+             <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 </section>
 </nav>
       
@@ -49,24 +39,33 @@
   </div>
 
 
-  <!-- First Band (Image) -->
 
+  <!-- End Header and Nav -->
+
+
+  <!-- First Band (Image) -->
+<div class="pages">
   <div class="row">
     <div class="large-12 columns">
+        <!-- Hidden Join Now -->
+        <div class="small-12 columns">
+         <ul class="hidden">
+           <li><img src="css/images/joinnow.png"></li>
+         </ul>
+        </div>
       <!-- Orbit Container -->
 <div class="orbit-container">
   <ul data-orbit="" class="orbit-slides-container">
     <li>
-      <img src="http://placehold.it/1200x500&text=[img]">
-      <div class="orbit-caption">This is a slider</div>
+      <img src="css/images/banner.png">
     </li>
 
   </ul>
 
   <!-- Prev/Next Arrows -->
-  <a href="#" class="orbit-prev">Prev <span></span></a>
+ <!-- <a href="#" class="orbit-prev">Prev <span></span></a>
   <a href="#" class="orbit-next">Next <span></span></a>
-
+-->
 </div>
 
     </div>
@@ -75,11 +74,9 @@
 
   <!-- Second Band (Image Left with Text) -->
 <div class="row">
-   <hr>
     <div class="large-12 columns">
     <div class="large-8 columns">
-       <h2 class="subheader">Training</h2>
-       <hr>
+       <h2 class="subheader-pages">Training</h2>
       <div class="row">
     <div class="large-12 columns">
 
@@ -93,9 +90,7 @@
 </div>
   <div class="large-4 columns">
 
-       <h2 class="subheader">Find Out More</h2>
-       <hr>
-
+       <h2 class="subheader-pages">Find Out More</h2>
 <form>
   <fieldset>
     <div class="row">
@@ -147,13 +142,13 @@
   </div>
 
  </div>
-  
+  </div>
 
   <!-- Subs -->
   <div class="row">
     <div class="large-12 columns">
     <div class="large-6 columns">
-      <div class="panel"> Take A Tour</div>
+      <h3 class="subheader-footer">Take A Tour</h3>
       <div class="row">
     <div class="large-12 columns">
       <div class="flex-video">
@@ -165,7 +160,7 @@
     </div>
 
       <div class="large-6 columns">
-      <div class="panel"> Location</div>
+       <h3 class="subheader-footer">Location</h3>
       <div class="row">
     <div class="large-12 columns">
       <div class="flex-video">
